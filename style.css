@@ -506,7 +506,7 @@ a{
 
     .card {
       width: 80%;
-    
+      height: 500px;
     }
 
     .card__link {
@@ -528,25 +528,9 @@ a{
   flex-direction: row-reverse;
 }
 
- .illustration__right {
-   display: block;
-   width: 50%;
-   height: 250px;
- }
+ 
 
   /* 左がイラスト */
-  .illustration__center {
-    display: block;
-    width: 50%;
-    height: 250px;
-  }
-
-  .illustration__left {
-    display: block;
-    width: 50%;
-    height: 250px;
-  }
-
   .illustration__inner.--reverse {
     flex-direction: row;
   }
@@ -566,6 +550,11 @@ a{
    line-height: 40px;
  }
 
+ .illustration__img {
+  display: block;
+  width: 50%;
+  height: 250px;
+}
 
 
 @media screen and (max-width: 767px) {
@@ -574,23 +563,10 @@ a{
     display: flex;
     flex-direction: column;
   }
-
-  .illustration__right {
-    width: 100%;
-  }
-
  
 /* 左がイラスト */
   .illustration__inner.--reverse {
     flex-direction: column;
-    width: 100%;
-  }
-
-  .illustration__center  {
-    width: 100%;
-  }
-
-  .illustration__left {
     width: 100%;
   }
 
@@ -605,6 +581,10 @@ a{
     font-size: 16px;
   }
 
+  .illustration__img {
+    width: 100%;
+    height: 200px;
+  }
   
 }
 
