@@ -5,6 +5,7 @@ body {
     color: #3e1300;
     font-size: 16px;
     background-color: #d1cbc3;
+    width: 100%;
 }
 
 img {
@@ -76,7 +77,7 @@ img {
     right: 0;
     left: 0;
     margin: auto;
-    top: 550px;
+    top: 500px;
 }
 
 .nav__box {
@@ -173,7 +174,7 @@ img {
   top: 20px;
 }
 
-/* ×に表記 */
+/* <に表記 */
 #menu-btn-check:checked ~ .menu-btn span {
   background-color: rgba(255, 255, 255, 0);/*透明*/
 }
@@ -238,10 +239,16 @@ img {
 #menu-btn-check:checked ~ .menu-content {
     left: 0;
 }
-
-  
-  
 }
+
+@media screen and (min-width: 1400px) {
+  .nav__boxs {
+    top: 800px;
+  }
+
+}
+  
+  
 
   /*----------------------------------------------------------*/
   /* work */
@@ -266,6 +273,10 @@ img {
   .headline {
     padding: 100px 0;
     background-color: #f7f4f2;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   @media screen and (max-width: 767px) {
@@ -277,7 +288,11 @@ img {
  /*----------------------------------------------------------*/
   /* work（制作物紹介） */
  /*----------------------------------------------------------*/
-.section-sito__box {
+.section-inner {
+  overflow: hidden;
+}
+
+ .section-sito__box {
   position: relative;
   margin-top: 100px;
   margin-bottom: 130px;
@@ -369,7 +384,8 @@ img {
   margin-top: 200px;
 }
 
-@media screen and (max-width: 767px) {
+
+@media screen and (max-width: 950px) {
   .section-sito__box {
     display: flex;
     flex-direction: column;
@@ -424,8 +440,6 @@ img {
     width: 80%;
   }
   
-  
-  
 }
 
 
@@ -433,7 +447,7 @@ img {
   /*----------------------------------------------------------*/
   /* work（カード） */
  /*----------------------------------------------------------*/
-.cards {
+ .cards {
   padding-top: 80px;
   padding-bottom: 40px;
 }
@@ -451,7 +465,6 @@ img {
   height: 470px;
   border: 1px solid #ccc;
   padding: 40px;
-  overflow: hidden;
   line-height: 2;
   box-shadow: 0px 5px 10px #ccc;
   background: linear-gradient(#f7f4f2,#eee);
@@ -487,32 +500,15 @@ img {
   font-weight: bold;
 }
 
-a{
-  text-decoration: none;
-}
+
 
 @media screen and (max-width: 767px){
-    .card__inner {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: nowrap;
-      flex-direction: column;
-    }
-
-    .card-text {
-      font-size: 18px;
-    }
-
-    .card {
-      width: 80%;
-      height: 500px;
-    }
-
-    .card__link {
-      width: 100%;
-    }
+  .card {
+    width: 300px;
+  }
+   
 }
+
 
  /*----------------------------------------------------------*/
   /*イラスト集  */
@@ -557,7 +553,7 @@ a{
 }
 
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 700px) {
 /* 右がイラスト */
   .illustration__inner {
     display: flex;
@@ -592,7 +588,7 @@ a{
 
 /*----------------------------------------------------------*/
   /*about */
- /*----------------------------------------------------------*/
+ /*----------------------------------------------------------*/ 
  .about__inner {
   display: flex;
   justify-content: flex-end;
@@ -647,12 +643,12 @@ a{
   font-size: 25px;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 700px) {
   .section-about__pc { display: none !important; }
   .section-about__sp { display: block !important; }
 }
 
-@media screen and (max-width: 767px) {  
+@media screen and (max-width: 900px) {  
   .about__inner {
     display: flex;
     flex-direction: column;
@@ -768,6 +764,10 @@ a{
    background-color: #3e1300;
    height: 60px;
    margin-top: 100px;
+   width: 100vw;
+   position: relative;
+   left: 50%;
+   transform: translateX(-50%);
  }
 
  .footer__title {
