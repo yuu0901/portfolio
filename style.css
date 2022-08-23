@@ -72,20 +72,20 @@ img {
 .nav__boxs {
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
+    flex-direction: column;
     position: absolute;
     right: 0;
     left: 0;
     margin: auto;
-    top: 500px;
+    top: 220px;
 }
 
 .nav__box {
-    color: #e65b20;
+    color: #f7f4f2;
     font-size: 30px;
     font-weight: bold;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-bottom: 10px;
     list-style: none;
 }
 
@@ -251,11 +251,11 @@ img {
   
 
   /*----------------------------------------------------------*/
-  /* work */
+  /* headline(題) */
  /*----------------------------------------------------------*/
   .section__title {
     color: #e65b20;
-    font-size: 50px;
+    font-size: 30px;
     font-weight: bold;
     display: flex;
     justify-content: center;
@@ -263,7 +263,7 @@ img {
   }
 
   .title__sub {
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
     display: flex;
     justify-content: center;
@@ -271,7 +271,7 @@ img {
   }
 
   .headline {
-    padding: 100px 0;
+    padding: 20px 0;
     background-color: #f7f4f2;
     width: 100vw;
     position: relative;
@@ -294,8 +294,8 @@ img {
 
  .section-sito__box {
   position: relative;
-  margin-top: 100px;
-  margin-bottom: 130px;
+  margin-top: 30px;
+  margin-bottom: 90px;
 }
 
 .section-sito__img {
@@ -361,8 +361,8 @@ img {
 /* 制作摸写反対バージョン */
 .section-revers__box {
   position: relative;
-  margin-top: 100px;
-  margin-bottom: 120px;
+  margin-top: 30px;
+  margin-bottom: 100px;
 }
 
 .section-revers__boxs {
