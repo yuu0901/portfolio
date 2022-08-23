@@ -83,7 +83,7 @@ img {
 
 .nav__box {
     color: #f7f4f2;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold;
     margin-bottom: 10px;
     list-style: none;
@@ -113,13 +113,13 @@ img {
 .header-img__pc { display: block !important; }
 .header-img__sp { display: none !important; }
    
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 600px) {
   .header-img__pc { display: none !important; }
   .header-img__sp { display: block !important; }
 }
 
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 600px) {
   .header__pc {
     display: none;
   }
@@ -281,7 +281,15 @@ img {
 
   @media screen and (max-width: 767px) {
      .headline {
-       padding: 50px 0;
+       padding: 10px 0;
+     }
+
+     .section__title {
+      font-size: 20px;
+     }
+
+     .title__sub {
+      font-size: 10px;
      }
   }
 
@@ -391,7 +399,7 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 40px;
     margin-bottom: 0px;
     position: initial;
     margin-left: 0px;
@@ -419,7 +427,7 @@ img {
   }
 
   .section-revers__box {
-    margin-top: 100px;
+    margin-top: 40px;
     position: initial;
     display: flex;
     flex-direction: column;
@@ -505,6 +513,11 @@ img {
 @media screen and (max-width: 767px){
   .card {
     width: 300px;
+  }
+
+  .cards {
+    padding-top: 40px;
+    padding-bottom: 20px;
   }
    
 }
