@@ -113,13 +113,18 @@ img {
 .header-img__pc { display: block !important; }
 .header-img__sp { display: none !important; }
    
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 605px) {
   .header-img__pc { display: none !important; }
   .header-img__sp { display: block !important; }
 }
 
+@media only screen and (max-width: 850px) {
+  .nav__boxs {
+    top: 120px;
+  }
+}
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 605px) {
   .header__pc {
     display: none;
   }
@@ -282,14 +287,6 @@ img {
   @media screen and (max-width: 767px) {
      .headline {
        padding: 10px 0;
-     }
-
-     .section__title {
-      font-size: 20px;
-     }
-
-     .title__sub {
-      font-size: 10px;
      }
   }
 
@@ -524,6 +521,34 @@ img {
 
 
  /*----------------------------------------------------------*/
+  /* photoshopデザイン */
+ /*----------------------------------------------------------*/
+ .section-Desing {
+  padding: 30px 0;
+ }
+ 
+.Desing__link {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+ .Desing__img {
+  width: 230px;
+  height: 300px;
+ }
+
+ .Desing__a {
+  display: inline-block;
+	color: #fff;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+ }
+
+ .Desing__a:hover {
+	opacity: 0.6;
+}
+ /*----------------------------------------------------------*/
   /*イラスト集  */
  /*----------------------------------------------------------*/
   .section-illustration {
@@ -630,7 +655,7 @@ img {
    background-color: #f7f4f2;
    position: absolute;
    right: 400px;
-   top: 100px;
+   top: 70px;
  }
 
  .section-about__box2 {
@@ -640,7 +665,7 @@ img {
   background-color: #f7f4f2;
   position: absolute;
   right: 400px;
-  top: 380px;
+  top: 360px;
 }
 
 .section-about__name {
