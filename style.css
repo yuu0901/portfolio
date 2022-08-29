@@ -531,23 +531,128 @@ img {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
- .Desing__img {
+ .Desing__height {
   width: 230px;
   height: 300px;
  }
 
- .Desing__a {
+ .Desing__width {
+  width: 300px;
+  height:230px;
+ }
+
+ .Desing__button {
   display: inline-block;
 	color: #fff;
 	cursor: pointer;
 	transition: all 0.3s ease 0s;
  }
 
- .Desing__a:hover {
+ .Desing__button:hover {
 	opacity: 0.6;
 }
+
+/* モーダルバー */
+.modal-wrapper {
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 40px 10px;
+  text-align: center;
+}
+
+.modal-wrapper:not(:target) {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .3s, visibility .3s;
+}
+
+.modal-wrapper:target {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity .4s, visibility .4s;
+}
+
+.modal-wrapper::after {
+  display: inline-block;
+  height: 100%;
+  margin-left: -.05em;
+  vertical-align: middle;
+  content: ""
+}
+
+.modal-wrapper .modal-window {
+  box-sizing: border-box;
+  display: inline-block;
+  z-index: 20;
+  position: relative;
+  width: 70%;
+  max-width: 700px;
+  padding: 10px 30px 25px;
+  border-radius: 2px;
+  background: #d1cbc3;
+  box-shadow: 0 0 30px rgba(0, 0, 0, .6);
+  vertical-align: middle
+}
+
+.modal-wrapper .modal-window .modal-content {
+  max-height: 80vh;
+  overflow-y: auto;
+  text-align: left
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal__img {
+  width: 50%;
+  height: 50%;
+}
+
+.modal__titl {
+  color: #e65b20;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.modal-overlay {
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, .8)
+}
+
+.modal-wrapper .modal-close {
+  z-index: 20;
+  position: absolute;
+  top: 5px;
+  right: 1px;
+  width: 30px;
+  color: #e65b20 !important;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 35px;
+  text-align: center;
+  text-decoration: none;
+  text-indent: 0
+}
+
+.modal-wrapper .modal-close:hover {
+  color: #f7f4f2 !important
+}
+
  /*----------------------------------------------------------*/
   /*イラスト集  */
  /*----------------------------------------------------------*/
