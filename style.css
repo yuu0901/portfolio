@@ -3,7 +3,7 @@
 /*----------------------------------------------------------*/
 body {
     color: #3e1300;
-    font-size: 16px;
+    font-size: 15px;
     background-color: #d1cbc3;
     width: 100%;
 }
@@ -13,9 +13,7 @@ img {
     height: auto;
   }
 
-  .pc-br {
-    display: none;
-  }
+
 
 @media screen and (max-width: 767px) {
 
@@ -23,9 +21,7 @@ img {
       font-size: 13px;
     }
 
-    .pc-br {
-      display: block;
-    }
+
 
 }
   
@@ -323,7 +319,7 @@ img {
   }
 
 .section-sito__name {
-  font-size: 30px;
+  font-size: 28px;
   font-weight: bold;
   color: #e65b20;
 
@@ -331,7 +327,7 @@ img {
 
 .section-sito__headline {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 17px;
 }
 
 .section-span {
@@ -361,6 +357,7 @@ img {
 
 .section-sito__list {
   margin-left: 25px;
+  padding: 2px;
 }
 
 /* 制作摸写反対バージョン */
@@ -615,13 +612,15 @@ img {
 
 .modal__img {
   width: 50%;
-  height: 50%;
+  height: 70%;
 }
 
 .modal__titl {
   color: #e65b20;
   font-size: 18px;
   font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .modal-overlay {
@@ -780,11 +779,14 @@ img {
   margin-bottom: 10px;
 }
 
-.twitter {
-  margin-left: 20px;
-  color: skyblue;
-  font-size: 25px;
+.section-about__list {
+  padding: 8px;
 }
+
+.section-about__ten {
+  padding: 5px;
+}
+
 
 @media only screen and (max-width: 700px) {
   .section-about__pc { display: none !important; }
