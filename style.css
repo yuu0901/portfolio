@@ -617,11 +617,26 @@ img {
 
 .modal__titl {
   color: #e65b20;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: bold;
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+.modal__name {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.modal__ten {
+  padding: 5px;
+}
+
+.modal__text {
+  margin-bottom: 10px;;
+}
+
 
 .modal-overlay {
   z-index: 10;
